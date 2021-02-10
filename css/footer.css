@@ -1,10 +1,8 @@
 .footer {
-   margin: auto;
+   margin-top: 100px;
    left: 0;
    bottom: 0;
-   padding-left: 40px;
-   padding-right: 40px;
-   padding-top: 10px;
+   padding: 10px 40px 10px 40px;
    background-color: #333;
    color: white;
    text-align: center;
@@ -32,22 +30,21 @@ h5 {
   font-family: Copperplate, Papyrus, fantasy;
 }
 
-.column {
-  float: left;
-  width: 31%;
-  margin-bottom: 16px;
-  padding: 0 8px;
+.flex-container{
+  display: flex;
 }
 
-@media screen and (max-width: 650px) {
-  .column {
-  width: 100%;
-  display: block;
-  }
+.flex-container > div{
+  margin-right:40px;
+  padding: 50px;
 }
 
-.row1::after {
-  content: "";
-  clear: both;
-  display: table;
+.flex-container img{
+  padding-top:10px;
+   width:20px;
+   height:20px;
 }
+
+
+
+
