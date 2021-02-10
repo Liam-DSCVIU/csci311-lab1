@@ -1,5 +1,4 @@
 .footer {
-   margin: auto;
    left: 0;
    bottom: 0;
    padding-left: 40px;
@@ -29,7 +28,7 @@ h5 {
   margin-left: 0;
   margin-right: 0;
   font-weight: bold;
-  font-family: Copperplate, Papyrus, fantasy;
+  font-family: 'Roboto';
 }
 
 .column {
