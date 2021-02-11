@@ -25,11 +25,11 @@
 body {
   display: flex;
   flex-direction: column;
-
-  width: 640px;
+  background-color: #f1f1f1;
+  width: 1140px;
   margin: auto;
 
-  color: #444;
+
   font-family: 'Roboto', sans-serif;  /* DEBUG: not doing anything? */
   font-size: 1rem;
   line-height: 1.5;
@@ -48,8 +48,12 @@ body {
   width: 50%;
   margin-right: 15px;
   float: left;
+  opacity: 1;
 }
 
+.overview img:hover{
+  opacity: 0.8;
+ }
 .overview h2 {
   font-family: 'Lobster';
   display: block;
@@ -83,37 +87,68 @@ body {
 
   border: 3px solid #a4b4fd;
   background-color: #efd9ce;
-
+  margin-bottom: 400px;
   margin: 20px auto;
   width: 90%
 }
 
   .recipe_summary {
-    display: block;
+    
     margin: 5px 15px;
+  
   }
 
     .recipe_summary h2 {
       font-family: 'Lobster';
-    }
+        }
 
     .recipe_summary p {
       font-family: 'Roboto';
+      padding-bottom:100px;
     }
 
   .recipe_item img {
     border: 1px solid black;
     width: 60%;
     max-height: 350px;
-    margin: auto;
+    margin: 20px auto;
     float: right;
+    opacity: 1;
   }
+
+  .recipe_item img:hover{
+    opacity: 0.8;
+   }
+ 
 
   .recipe_contents {
     grid-row-start: 2;
     grid-row-end: 3;
-    grid-column: span 2;
+    grid-column: span 3;
 
     font-family: 'Roboto';
     padding: 2px 15px;
+  }
+
+  .recipe_contents summary{
+
+    border: 2px solid black;
+    width: 100px;
+    border-radius: 5px;
+    padding:5px; 
+  }
+
+  .recipe_contents .flex-container{
+    display: flex;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .recipe_contents summary:hover{
+    background-color: #ffebcc;
+    border: 2px solid #9999ff;
+  }
+
+  .list{
+    width: 320px;
   }
