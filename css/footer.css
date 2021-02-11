@@ -1,23 +1,22 @@
 .footer {
-   left: 0;
-   bottom: 0;
-   padding-left: 40px;
-   padding-right: 40px;
-   padding-top: 10px;
-   background-color: #333;
-   color: white;
-   text-align: center;
-   font-family: Helvetica, sans-serif;  
-   font-size: 15px;
+  margin-top: 100px;
+  left: 0;
+  bottom: 0;
+  padding: 10px 40px 10px 40px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  font-family: Helvetica, sans-serif;  
+  font-size: 15px;
 }
 
 .footer a:link {
-    color:white;
+   color:white;
 }
 
 .footer a:visited {
-    text-decoration: none;
-	color: gray;
+   text-decoration: none;
+ color: gray;
 }
 
 h5 {
@@ -31,22 +30,33 @@ h5 {
   font-family: 'Roboto';
 }
 
-.column {
-  float: left;
-  width: 31%;
-  margin-bottom: 16px;
-  padding: 0 8px;
+.flex-container{
+ display: flex;
 }
 
-@media screen and (max-width: 650px) {
-  .column {
-  width: 100%;
+.vertical a{
   display: block;
-  }
+  line-height: 1.6;
+  color: white;
 }
 
-.row1::after {
-  content: "";
-  clear: both;
-  display: table;
+.vertical a:hover{
+  color: white;
 }
+
+.footer .flex-container > div{
+ margin-right:40px;
+ padding: 50px;
+}
+
+.flex-container img{
+ padding-top:10px;
+  width:20px;
+  height:20px;
+ 
+}
+
+
+
+
+
